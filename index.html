@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body>
+
+    <header class=" relative bg-[url('/images/header.jpg')] bg-cover bg-center h-screen ">
+        
+        <div class="absolute inset-0 bg-black/50"></div>
+        
+        <div class="relative z-10 ">
+            
+            <nav class="fixed top-0 w-full text-white flex justify-between items-center p-6 flex-wrap lg:p-7  ">
+
+                <h1 class="font-logo lg:hover:text-orange-300">BARBERIA</h1>
+                
+                <div class=" block lg:hidden" id="boton">
+                    
+                        <img class="w-13" src="/images/menus.png" alt="">
+    
+                </div>
+                
+                <div class="w-full block flex-grow bg-white/30 p-2 rounded-xl lg:flex lg:w-auto lg:ml-20  " id="menu">
+                    <div class="flex flex-col w-full text-right lg:flex-row lg:justify-evenly " > 
+                        <a class="block font-title py-2 px-3 border-b-1 border-orange-300 lg:border-none lg:hover:text-orange-300" href="">Nosotros</a>
+                        <a class="block font-title py-2 px-3 border-b-1 border-orange-300 lg:border-none lg:hover:text-orange-300" href="">Servicios</a>
+                        <a class="block font-title py-2 px-3 border-b-1 border-orange-300 lg:border-none lg:hover:text-orange-300" href="">Precios</a>
+                        <a class="block font-title py-2 px-3 border-b-1 border-orange-300 lg:border-none lg:hover:text-orange-300"href="">Barberos</a>
+                        <a class="block font-title py-2 px-3 border-b-1 border-orange-300 lg:border-none lg:hover:text-orange-300" href="">Testimonio</a>
+                        <a class="block font-title py-2 px-3 border-b-1 border-orange-300 lg:border-none lg:hover:text-orange-300" href="">Ubicacion</a>
+                    </div>
+                    
+                </div>
+            </nav>
+            
+            
+        </div>
+
+        
+    </header>
+
+
+    
+    
+    <script src="app.js"></script>
+</body>
+</html>
