@@ -7,14 +7,15 @@
 }
 
 .font-title{
-    font-family: "League Spartan", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
+   font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
 }
 
 .font-text{
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
 }
