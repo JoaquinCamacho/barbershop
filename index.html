@@ -11,20 +11,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 </head>
 <body>
 
-    <header class=" relative bg-[url('/images/header.jpg')] bg-cover bg-center h-screen ">
+    <header class=" relative bg-[url('/images/header.jpg')] bg-cover bg-center h-screen flex flex-col justify-end inset-shadow-2xs shadow-black">
         
         <div class="absolute inset-0 bg-black/50"></div>
         
-        <div class="relative z-10 ">
             
-            <nav class="fixed top-0 w-full text-white flex justify-between items-center p-6 flex-wrap lg:p-7  ">
+            <nav class="fixed top-0 z-50 w-full text-white flex justify-between items-center p-6 flex-wrap backdrop-blur-xs rounded-xl  lg:p-7 ">
 
-                <h1 class="font-logo lg:hover:text-orange-300">BARBERIA</h1>
+                <h1 class="font-logo lg:hover:text-[#E3B04B] lg:text-2xl">BARBERIA</h1>
                 
                 <div class=" block lg:hidden" id="boton">
                     
@@ -32,28 +32,64 @@
     
                 </div>
                 
-                <div class="w-full block flex-grow bg-white/30 p-2 rounded-xl lg:flex lg:w-auto lg:ml-20  " id="menu">
+                <div class="hidden w-full block flex-grow bg-black/70 backdrop-blur-md p-2 rounded-xl lg:flex lg:w-auto lg:ml-20 lg:bg-transparent " id="menu">
                     <div class="flex flex-col w-full text-right lg:flex-row lg:justify-evenly " > 
-                        <a class="block font-title py-2 px-3 border-b-1 border-orange-300 lg:border-none lg:hover:text-orange-300" href="">Nosotros</a>
-                        <a class="block font-title py-2 px-3 border-b-1 border-orange-300 lg:border-none lg:hover:text-orange-300" href="">Servicios</a>
-                        <a class="block font-title py-2 px-3 border-b-1 border-orange-300 lg:border-none lg:hover:text-orange-300" href="">Precios</a>
-                        <a class="block font-title py-2 px-3 border-b-1 border-orange-300 lg:border-none lg:hover:text-orange-300"href="">Barberos</a>
-                        <a class="block font-title py-2 px-3 border-b-1 border-orange-300 lg:border-none lg:hover:text-orange-300" href="">Testimonio</a>
-                        <a class="block font-title py-2 px-3 border-b-1 border-orange-300 lg:border-none lg:hover:text-orange-300" href="">Ubicacion</a>
+                        <a class="block font-title py-2 px-3 border-b-1 border-orange-300 lg:border-none lg:hover:text-[#E3B04B]" href="">Nosotros</a>
+                        <a class="block font-title py-2 px-3 border-b-1 border-orange-300 lg:border-none lg:hover:text-[#E3B04B]" href="">Servicios</a>
+                        <a class="block font-title py-2 px-3 border-b-1 border-orange-300 lg:border-none lg:hover:text-[#E3B04B]" href="">Precios</a>
+                        <a class="block font-title py-2 px-3 border-b-1 border-orange-300 lg:border-none lg:hover:text-[#E3B04B]"href="">Barberos</a>
+                        <a class="block font-title py-2 px-3 border-b-1 border-orange-300 lg:border-none lg:hover:text-[#E3B04B]" href="">Testimonio</a>
+                        <a class="block font-title py-2 px-3  lg:border-none lg:hover:text-orange-300" href="">Ubicacion</a>
                     </div>
                     
                 </div>
             </nav>
             
-            
-        </div>
 
+        <div data-aos="fade-right"  class="relative z-10  px-6 pb-2 lg:p-12 lg:pb-10">
+
+            <h2  class="font-title text-5xl text-white lg:text-7xl">Tu estilo, llevado al siguiente nivel.</h2>
+            <p class="font-text text-sm mt-1 mb-4 text-white lg:text-lg">Cortes, barba y estilos personalizados en un espacio pensado para que salgas sintiéndote mejor que cuando entraste.</p>
+        
+            <div class="flex flex-col items-center lg:flex-row ">
+                <button class=" font-text text-left my-2 self-start p-3 bg-[#F1D6AB] rounded-xl inset-shadow-2xs lg:hover:inset-shadow-orange-400"><a href="">Reservar turno</a></button>
+                <button class="font-text text-left text-white my-2 self-start p-3 border-white  border-1 rounded-xl lg:ml-4 lg:hover:bg-white/40 lg:hover:text-black"><a href="">Ver servicios</a></button>
+            </div>
+        </div>
         
     </header>
+
+    <main class="relative z-10 bg-black shadow-[0_-20px_20px_black] ">
+
+
+                <div class="bg-black p-6 flex flex-col justify-between h-80 items-center">
+
+                        <div  class="text-black text-center  font-text bg-[#F1D6AB] border-[#F1D6AB] border-2 rounded-xl w-full p-3 my-3 shadow-[0_6px_0px_#E3B04B]">
+                            <h4>Llamanos hoy mismo</h4>
+                            <p>12345-6789</p>
+                        </div>
+                        <div class="text-black  text-center font-text bg-[#F1D6AB] border-[#F1D6AB] border-2 rounded-xl w-full p-3 my-3 shadow-[0_6px_0px_#E3B04B]">
+                            <h4>Ubicacion</h4>
+                            <p>Ubicacion falsa 123</p>
+                        </div>
+                        <div class="text-black text-center  font-text bg-[#F1D6AB] border-[#F1D6AB] border-2 rounded-xl w-full p-3 my-3 shadow-[0_6px_0px_#E3B04B]">
+                            <h4>Horarios</h4>
+                            <p>Lunes a viernes 9AM - 10PM</p>
+                        </div>
+
+                </div>
+    
+    </main>
+
+    
 
 
     
     
     <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
