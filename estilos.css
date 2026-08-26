@@ -14,8 +14,7 @@
 }
 
 .font-text{
-font-family: "Cormorant Garamond", serif;
-  font-optical-sizing: auto;
-  font-weight: 100;
+font-family: "Flamenco", system-ui;
+  font-weight: 300;
   font-style: normal;
 }
