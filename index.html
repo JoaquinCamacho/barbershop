@@ -15,14 +15,14 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 </head>
-<body>
+<body class="bg-[#F1D6AB]">
 
     <header class=" relative bg-[url('/images/header.jpg')] bg-cover bg-center h-screen flex flex-col justify-end inset-shadow-2xs shadow-black">
         
         <div class="absolute inset-0 bg-black/50"></div>
         
             
-            <nav class="fixed top-0 z-50 w-full  flex justify-between items-center p-4 flex-wrap backdrop-blur-xs bg-black/4056  lg:p-7 ">
+            <nav class="fixed top-0 z-50 w-full  flex justify-between items-center p-4 flex-wrap backdrop-blur-xs bg-black/40  lg:p-7 ">
 
                 <h1 class="font-logo text-white lg:hover:text-[#E3B04B] lg:text-2xl">BARBERIA</h1>
                 
@@ -58,7 +58,7 @@
         
     </header>
 
-    <main class="relative z-10 bg-[#F1D6AB] shadow-[0_-20px_20px_#F1D6AB]  ">
+    <main class="relative z-10  shadow-[0_-20px_20px_#F1D6AB]  ">
 
 
             <div class=" p-6 flex flex-col justify-between h-auto items-center lg:flex-row">
@@ -97,7 +97,7 @@
 
                 <h2 class="font-title text-center text-3xl lg:text-5xl">Servicios</h2>
 
-                <div class="grid grid-cols-2 grid-rows-4 gap-5 mt-20 text-center lg:grid-cols-3 ">
+                <div class="grid grid-cols-2 grid-rows-3 gap-5 mt-20 text-center lg:grid-cols-3 lg:grid-rows-2 ">
 
                     <div class="bg-white p-4 rounded-lg shadow-[0_6px_4px_#C29742] place-items-center">
                         <img class="pt-5 lg:w-12"   src="images/broche-del-pelo.png" alt="">
@@ -141,35 +141,69 @@
             </section>
 
 
-            <section id="Precios">
+            <section id="precios" class="px-5 mt-10  pb-10">
 
-                <div>
-                    <img src="/images/precios.jpg" alt="">
-                    <div class="">
-                        <h2>Precios</h2>
+                <div class="bg-white shadow-[0_3px_4px_#C29742] p-4 rounded-lg h-auto lg:flex lg:flex-row-reverse lg:justify-between">
 
-                        <div>
-                            <ul>
-                                <li>
-                                    <h4></h4>
+                    <img class="rounded-xs  lg:w-100 lg:h-100" src="/images/precios.jpg" alt="">
+                    
+                    <div class=" flex flex-col justify-between bg-amber-50 rounded-xl p-2 xs:mt-2 lg:mr-4 lg:w-full lg:justify-around ">
+                        
+                        <h2 class="text-2xl mt-5 pb-2 font-title border-b-1 border-orange-300 lg:text-3xl">Precios</h2>
+
+                        <div >
+                            <ul class="">
+                                <li class="flex justify-between mt-4 ">
+                                    <h4 class="font-text text-lg lg:text-2xl">Recorte</h4>
+                                    <p class="font-text text-lg text-orange-600 lg:text-2xl">$40</p>
                                 </li>
-                                <li>
-                                    <h4></h4>
+                                <li class="flex justify-between my-4">
+                                    <h4 class="font-text text-lg lg:text-2xl">Afeitado</h4>
+                                    <p class="font-text text-lg text-orange-600 lg:text-2xl">$20</p>
                                 </li>
-                                <li>
-                                    <h4></h4>
+                                <li class="flex justify-between ">
+                                    <h4 class="font-text text-lg lg:text-2xl">Cuidado Personal</h4>
+                                    <p class="font-text text-lg text-orange-600 lg:text-2xl">$50</p>
                                 </li>
-                                <li>
-                                    <h4></h4>
+                                <li class="flex justify-between my-4">
+                                    <h4 class="font-text text-lg lg:text-2xl">Estilismo</h4>
+                                    <p class="font-text text-lg text-orange-600 lg:text-2xl">$30</p>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
+            </section>
+
+            <section id="barberos" class="px-5 mt-10 ">
+
+                <h2 class="font-title text-center text-3xl my-10">Barberos</h2>
+
+                <div class="flex justify-center gap-10 items-center flex-wrap text-center">
+
+                    <div class="flex flex-col w-40 h-70">
+                        <img  class="w-40 h-60" src="images/cristianRojas.jpg" alt="">
+                        <h3>Cristian Rojas</h3>
+                        <p>Especialista en cortes modernos y personalizados, siempre enfocado en encontrar el estilo ideal para cada cliente.</p>
+                    </div>
+
+                    <div class="flex flex-col w-40 h-70">
+                        <img class="w-40 h-60" src="images/martinMoreno.jpg" alt="">
+                        <h3>Martin Moreno</h3>
+                        <p>Experto en barbería clásica, afeitados y cuidado de la barba, combinando precisión y atención al detalle.</p>
+                    </div>
+
+                    <div class="flex flex-col w-40 h-70">
+                        <img class="w-40 h-60" src="images/mateusCodeiro.jpg" alt="">
+                        <h3>Mateus Codeiro</h3>
+                        <p>Apasionado por las últimas tendencias y el estilismo, ayudando a cada cliente a renovar y potenciar su imagen</p>
+                    </div>
+
+                </div>
 
             </section>
-    
+
     </main>
 
     
